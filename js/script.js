@@ -55,6 +55,7 @@ form_cep.onsubmit = function (event) {
         cidade: `${address['localidade']}/${address['uf']}`
     }
     if (check_if_cep_exists(address['cep'])) {
+        alert('CEP ja existente');
         return;
     }
     address_list.push(cleaned_address);
